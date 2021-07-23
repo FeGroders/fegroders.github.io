@@ -43,7 +43,7 @@ body {
   .content-box {
     color: black;
     text-align: center;
-    width: 50%;
+    width: 75%;
   }
 
   .socialmedia {
@@ -51,5 +51,5 @@ body {
   }
 
   .socialmedia a {
-      margin: 7px;
+    margin: 7px;
   }
