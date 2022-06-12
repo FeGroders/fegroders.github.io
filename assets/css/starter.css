@@ -1,0 +1,55 @@
+body, html{
+    height: 100vh;
+}
+
+body {
+    background-color: white;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    
+  }
+  
+  .photo img {
+    border-radius: 50%;
+    height: 28vh;
+  }
+
+  .name h1 {
+      margin: 0%;
+      font-size: 4.5vh;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .aboutme p {
+    margin: 0%;
+    font-size: 2.5vh;
+    font-family: 'Source Sans Pro', sans-serif, Black;
+  }
+
+  .container-box {
+    height: 95%;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .content-box {
+    color: black;
+    text-align: center;
+    width: 75%;
+  }
+
+  .socialmedia {
+    padding-top: 15%;
+  }
+
+  .socialmedia a {
+    margin: 7px;
+  }
