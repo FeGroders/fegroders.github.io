@@ -5,9 +5,9 @@ const header = document.getElementById("header");
 
 /* verifica se o tema armazenado no localStorage é escuro
 se sim aplica o tema escuro ao body */
-if (theme === "dark") { 
-    document.body.classList.add("dark");
-    toggleImg.src = "./assets/img/light-mode.png";
+if (theme === "dark") {
+  document.body.classList.add("dark");
+  toggleImg.src = "./assets/img/light-mode.png";
 }
 
 // event listener para quando o botão de alterar o tema for clicado
@@ -20,3 +20,12 @@ toggle.addEventListener("click", () => {
   }
   window.location.reload();
 });
+
+fetch("https://api.github.com/users/fegroders/repos")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
