@@ -3,6 +3,17 @@ const toggleImg = document.getElementById("toggle-img");
 const theme = window.localStorage.getItem("theme");
 const header = document.getElementById("header");
 
+const configScrollReveal = {
+  duration: 500,
+  distance: "30px",
+  origin: "bottom",
+  reset: true,
+  viewFactor: 0.5,
+  scale: 0.9,
+  easing: "ease-in-out",
+  mobile: false,
+}
+
 /* verifica se o tema armazenado no localStorage é escuro
 se sim aplica o tema escuro ao body */
 if (theme === "dark") {
@@ -29,3 +40,5 @@ fetch("https://api.github.com/users/fegroders/repos")
   .catch((error) => {
     console.log(error);
   });
+
+ScrollReveal().reveal('.projects', configScrollReveal);

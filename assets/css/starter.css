@@ -1,7 +1,8 @@
 body, html {
-  /* height: 100vh; */
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -11,8 +12,9 @@ body {
   --invert-color: 0%;
 
   background-color: var(--bg-grey-light);
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: 'Bebas Neue', cursive;
 }
 
 body::-webkit-scrollbar {
@@ -41,48 +43,6 @@ header {
   height: 100vh;
 }
 
-.icon-scroll,
-.icon-scroll:before {
-    position: absolute;
-    left: 50%
-}
-.icon-scroll {
-    width: 20px;
-    height: 35px;
-    margin-left: -20px;
-    bottom: 20px;
-    margin-top: -35px;
-    border: 2px solid #fff;
-    border-radius: 25px
-}
-@media (max-width: 767px) {
-    .icon-scroll {
-        position: relative
-    }
-}
-.icon-scroll:before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    margin-left: -4px;
-    top: 8px;
-    border-radius: 4px;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: scroll
-}
-@keyframes scroll {
-    0% {
-        opacity: 1
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(26px)
-    }
-}
-
-
 .flex-box {
   display: flex;
   align-items: center;
@@ -100,14 +60,12 @@ header {
 
 .name h1 {
   margin: 0%;
-  font-size: 4.5vh;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
 }
 
 .aboutme p {
   margin: 0%;
-  font-size: 2.5vh;
-  font-family: 'Source Sans Pro', sans-serif, var(--text-dark);
+  font-size: 1.25rem;
 }
 
 .container-box {
@@ -124,6 +82,7 @@ header {
 
 .socialmedia {
   padding-top: 15%;
+  width: 100vw;
 }
 
 .socialmedia a {
@@ -138,4 +97,82 @@ header {
 #toggle {
   background-color: transparent;
   border: none;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%
+}
+
+.icon-scroll {
+  width: 20px;
+  height: 35px;
+  margin-left: -20px;
+  bottom: 20px;
+  margin-top: -35px;
+  border: 2px solid #fff;
+  border-radius: 25px
+}
+
+/* @media (max-width: 767px) {
+  .icon-scroll {
+    position: relative
+  }
+} */
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(26px)
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+}
+
+.projects-container {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  /* height: 100vh; */
+}
+
+.project {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-dark);
+  border-radius: 5px; 
+  padding: 1rem;
+}
+
+.project li {
+  margin: 0%;
+  padding: 0%;
+  display: inline-block;
+  /* display: flex; */
 }
