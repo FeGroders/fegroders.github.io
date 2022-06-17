@@ -32,14 +32,14 @@ toggle.addEventListener("click", () => {
   window.location.reload();
 });
 
-fetch("https://api.github.com/users/fegroders/repos")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// fetch("https://api.github.com/users/fegroders/repos")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
 
 ScrollReveal().reveal('.projects', configScrollReveal);
 
