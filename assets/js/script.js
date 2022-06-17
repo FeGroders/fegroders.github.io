@@ -42,3 +42,5 @@ fetch("https://api.github.com/users/fegroders/repos")
   });
 
 ScrollReveal().reveal('.projects', configScrollReveal);
+
+ScrollReveal().reveal('.icon-scroll', configScrollReveal);

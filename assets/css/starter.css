@@ -115,12 +115,6 @@ header {
   border-radius: 25px
 }
 
-/* @media (max-width: 767px) {
-  .icon-scroll {
-    position: relative
-  }
-} */
-
 .icon-scroll:before {
   content: '';
   width: 8px;
@@ -157,22 +151,28 @@ h1 {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: row;
-  /* flex-direction: row; */
+  flex-wrap: wrap;
   justify-content: space-around;
-  /* height: 100vh; */
 }
 
 .project {
   align-items: center;
+  /* justify-content: space-around; */
   justify-content: center;
+  margin: 2%;
   border: 1px solid var(--text-dark);
   border-radius: 5px; 
   padding: 1rem;
+  width: 40%;
 }
 
 .project li {
   margin: 0%;
   padding: 0%;
   display: inline-block;
-  /* display: flex; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
 }
