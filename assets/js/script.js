@@ -41,6 +41,6 @@ toggle.addEventListener("click", () => {
 //     console.log(error);
 //   });
 
+ScrollReveal().reveal('.skills', configScrollReveal);
 ScrollReveal().reveal('.projects', configScrollReveal);
-
 ScrollReveal().reveal('.icon-scroll', configScrollReveal);

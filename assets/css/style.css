@@ -148,7 +148,7 @@ h1 {
 
 .projects-container {
   width: 100%;
-  margin-top: 1.5rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -182,4 +182,13 @@ h1 {
 a {
   text-decoration: none;
   color: var(--text-dark);
+}
+
+.skills-container {
+  width: 100%;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
