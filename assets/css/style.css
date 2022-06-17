@@ -164,6 +164,13 @@ h1 {
   border-radius: 5px; 
   padding: 1rem;
   width: 40%;
+
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.project h2, .project p {
+  transform: translateZ(20px);
 }
 
 .project li {
